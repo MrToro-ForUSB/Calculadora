@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/main.css" />
+	</head>
+
+	<body>
+		<div class="calculator">
+			<div class="calculator__container">
+				<div class="calculator__result">
+					<input id="result" type="text" disabled />
+				</div>
+
+				<div class="calculator__buttons">
+					<button onclick="clearResult()" class="color-purple">CA</button>
+					<button>C</button>
+					<button>%</button>
+					<button onclick="insertOperator('/')" class="background-purple-light">÷</button>
+					<button onclick="insertNumber('7')">7</button>
+					<button onclick="insertNumber('8')">8</button>
+					<button onclick="insertNumber('9')">9</button>
+					<button onclick="insertOperator('*')" class="background-purple-light">×</button>
+					<button onclick="insertNumber('4')">4</button>
+					<button onclick="insertNumber('5')">5</button>
+					<button onclick="insertNumber('6')">6</button>
+					<button onclick="insertOperator('-')" class="background-purple-light">-</button>
+					<button onclick="insertNumber('1')">1</button>
+					<button onclick="insertNumber('2')">2</button>
+					<button onclick="insertNumber('3')">3</button>
+					<button onclick="insertOperator('+')" class="background-purple-light">+</button>
+					<button onclick="insertNumber('000')">000</button>
+					<button onclick="insertNumber('0')">0</button>
+					<button onclick="insertNumber('.')">.</button>
+					<button onclick="calculate()" class="background-purple">=</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
